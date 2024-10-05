@@ -1,0 +1,47 @@
+{
+    "project_name": "vits_azerbaijani",
+    "output_dir": "/content/drive/MyDrive/tuned",
+    "overwrite_output_dir": true,
+
+    "dataset_name": "Zeynal/Mozilla_Azerbaijani_language_TTS",    
+    "audio_column_name": "audio",
+    "text_column_name": "transcription",
+    "speaker_id_column_name": "client_id",
+    "train_split_name": "train",
+    "eval_split_name": "train",
+
+    
+
+    "max_tokens_length": 500,
+
+    "model_name_or_path": "/content/drive/MyDrive/dump",
+
+
+    "preprocessing_num_workers": 4,
+
+    "do_train": true,
+    "num_train_epochs": 200,
+    "gradient_accumulation_steps": 1,
+    "gradient_checkpointing": false,
+    "per_device_train_batch_size": 16,
+    "learning_rate": 2e-5,
+    "adam_beta1": 0.8,
+    "adam_beta2": 0.99,
+    "warmup_ratio": 0.01,
+    "group_by_length": false,
+
+    "do_eval": true, 
+    "eval_steps": 50,
+    "per_device_eval_batch_size": 16,
+    "max_eval_samples": 25, 
+    "do_step_schedule_per_epoch": true,
+
+    "weight_disc": 3,
+    "weight_fmaps": 1,
+    "weight_gen": 1,
+    "weight_kl": 1.5,
+    "weight_duration": 1,
+    "weight_mel": 35,
+
+    "seed": 456
+}
