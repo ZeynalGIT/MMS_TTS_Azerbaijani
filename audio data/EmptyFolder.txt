@@ -1,0 +1,5 @@
+This folder (audio data) is empty, in here you need to upload long audio.
+
+The audio that I used can be found from this link: https://youtu.be/rZrcWdU_PSo?si=5gQmzaJiS8G-mF5y
+
+The text data contains the transcription of this exact youtube videoş
